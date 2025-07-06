@@ -1,5 +1,6 @@
 {
   "itemGroup.godsblood": "God's Blood",
   "item.godsblood.godsblood": "God's Blood",
-  "item.godsblood.banana": "Banana"
+  "item.godsblood.banana": "Banana",
+  "block.godsblood.blood_block": "Block of God's Blood"
 }

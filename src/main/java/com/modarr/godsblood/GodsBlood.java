@@ -1,5 +1,6 @@
 package com.modarr.godsblood;
 
+import com.modarr.godsblood.block.ModBlocks;
 import com.modarr.godsblood.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -36,6 +37,7 @@ public class GodsBlood {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -53,6 +55,10 @@ public class GodsBlood {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ITEMGODSBLOOD);
             event.accept(ModItems.BANANA);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BLOOD_BLOCK);
         }
     }
 
