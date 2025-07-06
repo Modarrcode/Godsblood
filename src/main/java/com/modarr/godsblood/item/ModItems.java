@@ -9,7 +9,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GodsBlood.MODID);
 
-    public static final DeferredItem<Item> ItemGodsBlood = ITEMS.register("godsblood",
+    public static final DeferredItem<Item> ITEMGODSBLOOD = ITEMS.register("godsblood",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BANANA = ITEMS.register("banana",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus)  {

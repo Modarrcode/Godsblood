@@ -51,7 +51,8 @@ public class GodsBlood {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ItemGodsBlood);
+            event.accept(ModItems.ITEMGODSBLOOD);
+            event.accept(ModItems.BANANA);
         }
     }
 
