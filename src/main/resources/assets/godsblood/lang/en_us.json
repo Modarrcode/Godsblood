@@ -2,5 +2,6 @@
   "itemGroup.godsblood": "God's Blood",
   "item.godsblood.godsblood": "God's Blood",
   "item.godsblood.banana": "Banana",
-  "block.godsblood.blood_block": "Block of God's Blood"
+  "block.godsblood.blood_block": "Block of God's Blood",
+  "creativetab.godsblood.gods_blood": "God's Blood"
 }
