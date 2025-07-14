@@ -1,5 +1,6 @@
 package com.modarr.godsblood.block;
 
+import com.modarr.godsblood.block.custom.MagicBlock;
 import net.minecraft.world.level.block.Block;
 import com.modarr.godsblood.GodsBlood;
 import com.modarr.godsblood.item.ModItems;
@@ -22,6 +23,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLOOD_BLOCK = registerBlock("blood_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f,2f).sound(SoundType.FROGLIGHT)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

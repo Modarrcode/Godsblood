@@ -1,8 +1,17 @@
 {
   "itemGroup.godsblood": "God's Blood",
+
+
   "item.godsblood.godsblood": "God's Blood",
   "item.godsblood.banana": "Banana",
+  "item.godsblood.chisel": "Chisel",
+  "item.godsblood.blood_coal": "Blood Coal",
+
+
   "block.godsblood.blood_block": "Block of God's Blood",
-  "creativetab.godsblood.gods_blood": "God's Blood",
-  "item.godsblood.chisel": "Chisel"
+  "block.godsblood.magic_block": "Boom Block",
+
+
+  "creativetab.godsblood.gods_blood": "God's Blood"
+
 }

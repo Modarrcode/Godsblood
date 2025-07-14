@@ -20,8 +20,11 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.godsblood.gods_blood"))
                     .displayItems((itemDisplayParameters, output) -> {
                       output.accept(ModItems.ITEMGODSBLOOD);
-                      output.accept(ModBlocks.BLOOD_BLOCK);
                       output.accept(ModItems.CHISEL);
+                      output.accept(ModItems.BLOOD_COAL);
+
+                      output.accept(ModBlocks.BLOOD_BLOCK);
+                      output.accept(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {
