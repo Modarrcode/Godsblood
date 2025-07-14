@@ -21,7 +21,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> BLOOD_BLOCK = registerBlock("blood_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.FROGLIGHT)));
+                    .strength(0.8f,2f).sound(SoundType.FROGLIGHT)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

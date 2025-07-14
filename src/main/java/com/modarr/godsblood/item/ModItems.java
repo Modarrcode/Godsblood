@@ -1,6 +1,7 @@
 package com.modarr.godsblood.item;
 
 import com.modarr.godsblood.GodsBlood;
+import com.modarr.godsblood.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -13,6 +14,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BANANA = ITEMS.register("banana",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus)  {
         ITEMS.register(eventBus);

@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                       output.accept(ModItems.ITEMGODSBLOOD);
                       output.accept(ModBlocks.BLOOD_BLOCK);
+                      output.accept(ModItems.CHISEL);
                     }).build());
 
     public static void register(IEventBus eventBus) {
