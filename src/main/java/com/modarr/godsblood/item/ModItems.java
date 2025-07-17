@@ -4,10 +4,15 @@ import com.modarr.godsblood.GodsBlood;
 import com.modarr.godsblood.item.custom.ChiselItem;
 import com.modarr.godsblood.item.custom.FuelItem;
 import com.modarr.godsblood.item.custom.ModFoodProperties;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(GodsBlood.MODID);
@@ -16,7 +21,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> BANANA = ITEMS.register("banana",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.BANANA)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BANANA)){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.godsblood.banana.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties()));

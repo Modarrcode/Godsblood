@@ -10,8 +10,11 @@
 
   "block.godsblood.blood_block": "Block of God's Blood",
   "block.godsblood.magic_block": "Boom Block",
+  "block.godsblood.saronite_ore": "Saronite Ore",
 
 
-  "creativetab.godsblood.gods_blood": "God's Blood"
+  "creativetab.godsblood.gods_blood": "God's Blood",
+
+  "tooltip.godsblood.banana.tooltip": "Go Bananas for this item!"
 
 }

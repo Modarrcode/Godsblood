@@ -27,6 +27,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)));
+    public static final DeferredBlock<Block> SARONITE_ORE = registerBlock("saronite_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(0.8f, 2f).sound(SoundType.STONE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
