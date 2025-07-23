@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                       output.accept(ModBlocks.BLOOD_BLOCK);
                       output.accept(ModBlocks.MAGIC_BLOCK);
                       output.accept(ModBlocks.SARONITE_ORE);
+                      output.accept(ModBlocks.BLOOD_COAL_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

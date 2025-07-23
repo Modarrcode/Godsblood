@@ -3,6 +3,7 @@ package com.modarr.godsblood.datagen;
 import com.modarr.godsblood.GodsBlood;
 import com.modarr.godsblood.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -21,7 +22,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     }
 
-    private void blockWithItem(DeferredBlock<?> deferredBlock) {
+    private void blockWithItem(DeferredBlock<Block> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 }
