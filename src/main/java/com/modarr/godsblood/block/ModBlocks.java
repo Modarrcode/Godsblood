@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 
@@ -23,6 +22,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLOOD_BLOCK = registerBlock("blood_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f,2f).sound(SoundType.FROGLIGHT)));
+
+    public static final DeferredBlock<Block> BLOOD_COAL_BLOCK = registerBlock("blood_coal_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.8f,2f).sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
