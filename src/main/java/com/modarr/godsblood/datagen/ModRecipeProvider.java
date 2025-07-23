@@ -5,6 +5,8 @@ import com.modarr.godsblood.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -22,6 +24,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("BBB")
                 .define('B', ModItems.ITEMGODSBLOOD.get())
                 .unlockedBy("has_godsblood", has(ModItems.ITEMGODSBLOOD)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLOOD_COAL.get())
+                .pattern(" B ")
+                .pattern("BIB")
+                .pattern(" B ")
+                .define('I', Items.COAL)
+                .define('B', ModItems.ITEMGODSBLOOD.get())
+                        .unlockedBy("has_godsblood", has(ModItems.ITEMGODSBLOOD)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ITEMGODSBLOOD.get(), 9)
                 .requires(ModBlocks.BLOOD_BLOCK)
