@@ -32,6 +32,9 @@ public class ModItems {
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties()));
 
+    public static final DeferredItem<Item> SARONITE_INGOT = ITEMS.register("saronite_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> BLOOD_COAL = ITEMS.register("blood_coal",
             () -> new FuelItem(new Item.Properties(), 800));
 

@@ -22,11 +22,13 @@ public class ModCreativeModeTabs {
                       output.accept(ModItems.ITEMGODSBLOOD);
                       output.accept(ModItems.CHISEL);
                       output.accept(ModItems.BLOOD_COAL);
+                      output.accept(ModItems.SARONITE_INGOT);
 
                       output.accept(ModBlocks.BLOOD_BLOCK);
                       output.accept(ModBlocks.MAGIC_BLOCK);
                       output.accept(ModBlocks.SARONITE_ORE);
                       output.accept(ModBlocks.BLOOD_COAL_BLOCK);
+                      output.accept(ModBlocks.SARONITE_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

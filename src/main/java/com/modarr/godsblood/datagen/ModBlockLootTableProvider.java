@@ -19,7 +19,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.BLOOD_BLOCK.get());
         dropSelf(ModBlocks.BLOOD_COAL_BLOCK.get());
-        dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.SARONITE_BLOCK.get());
+        add(ModBlocks.MAGIC_BLOCK.get(),
+                block -> createOreDrop(ModBlocks.MAGIC_BLOCK.get(), ModItems.ITEMGODSBLOOD.get()));
         add(ModBlocks.SARONITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.SARONITE_ORE.get(), ModItems.ITEMGODSBLOOD.get()));
 

@@ -19,6 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLOOD_BLOCK);
         blockWithItem(ModBlocks.MAGIC_BLOCK);
         blockWithItem(ModBlocks.BLOOD_COAL_BLOCK);
+        blockWithItem(ModBlocks.SARONITE_BLOCK);
 
     }
 

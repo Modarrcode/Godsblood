@@ -33,6 +33,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SARONITE_ORE = registerBlock("saronite_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(0.8f, 2f).sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> SARONITE_BLOCK = registerBlock("saronite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.8f,2f).sound(SoundType.METAL)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
