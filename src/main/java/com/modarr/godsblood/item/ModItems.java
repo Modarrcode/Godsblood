@@ -20,6 +20,9 @@ public class ModItems {
     public static final DeferredItem<Item> ITEMGODSBLOOD = ITEMS.register("godsblood",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> UNREFINED_SARONITE_INGOT = ITEMS.register("unrefined_saronite_ingot",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> BANANA = ITEMS.register("banana",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BANANA)){
                 @Override

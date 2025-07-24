@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.minecraft.resources.ResourceLocation;
 
@@ -27,7 +28,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.ITEMGODSBLOOD.get())
                 .unlockedBy("has_godsblood", has(ModItems.ITEMGODSBLOOD.get())).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SARONITE_INGOT.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.UNREFINED_SARONITE_INGOT.get())
                 .pattern(" B ")
                 .pattern("BIB")
                 .pattern(" B ")
@@ -68,6 +69,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.SARONITE_BLOCK)
                 .unlockedBy("has_saronite_block", has(ModBlocks.SARONITE_BLOCK))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(GodsBlood.MODID, "saronite_ingot_from_block"));
+
+        SimpleCookingRecipeBuilder.smelting(
+                Ingredient.of(ModItems.UNREFINED_SARONITE_INGOT.get()),
+                RecipeCategory.MISC,
+                ModItems.SARONITE_INGOT.get(),
+                0.35f,
+                200
+        ).unlockedBy("has_godsblood", has(ModItems.ITEMGODSBLOOD.get())).save(recipeOutput, ResourceLocation.fromNamespaceAndPath(GodsBlood.MODID, "saronite_refining"));
 
     }
 }
