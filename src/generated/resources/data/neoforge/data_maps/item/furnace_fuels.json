@@ -1,0 +1,10 @@
+{
+  "values": {
+    "godsblood:blood_coal": {
+      "burn_time": 1200
+    },
+    "godsblood:blood_coal_block": {
+      "burn_time": 10800
+    }
+  }
+}
