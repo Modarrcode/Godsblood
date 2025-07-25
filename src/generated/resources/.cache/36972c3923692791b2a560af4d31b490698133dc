@@ -1,13 +1,16 @@
-// 1.21.1	2025-07-23T22:49:02.5054871	Block States: godsblood
+// 1.21.1	2025-07-24T17:05:45.0623173	Block States: godsblood
 bbb08148c3f8e8318e098c1e03ec6fd1d8d28a97 assets/godsblood/blockstates/blood_block.json
 20a7bdb625218537bab168cd056289642b932d6c assets/godsblood/blockstates/blood_coal_block.json
 20783816a91dc306a906cbebd8e63eae5e55f247 assets/godsblood/blockstates/magic_block.json
+719fa1be6f2c19a85e10b85861e96536d33cd20f assets/godsblood/blockstates/saronite_block.json
 8fd4173348db289e9e164a91aade65e692ed8c3b assets/godsblood/blockstates/saronite_ore.json
 0c9c9eaa015430bd44c75e261a9e8afc21612642 assets/godsblood/models/block/blood_block.json
 1ca3c4040064504a3aaecb32e47e16780663a356 assets/godsblood/models/block/blood_coal_block.json
 19b2240b0ed883808f0d740e87acbf198ab0a96c assets/godsblood/models/block/magic_block.json
+f8af7ac014ecb12922c4d3ea9f6a5cda2e2da668 assets/godsblood/models/block/saronite_block.json
 1889f538282f04d8fe9804e503e377c2f12b37ef assets/godsblood/models/block/saronite_ore.json
 7d3e3261c9a4cd0a2bd72dd73ab3055bbfc1088a assets/godsblood/models/item/blood_block.json
 034e1051249f03bb4a70053bb02f01a0751fc327 assets/godsblood/models/item/blood_coal_block.json
 039a8c231354dd5b0fd46a7f783a53da969b6330 assets/godsblood/models/item/magic_block.json
+c3e18a00da672735d701c94281bc0cc6bfeccbc1 assets/godsblood/models/item/saronite_block.json
 e2dba47bd3c6a7c8a57d98e74801b18910b709e1 assets/godsblood/models/item/saronite_ore.json

@@ -7,6 +7,7 @@ import com.modarr.godsblood.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -32,6 +33,14 @@ public class ModBlocks {
                     .strength(2f)));
     public static final DeferredBlock<Block> SARONITE_ORE = registerBlock("saronite_ore",
             () -> new Block(BlockBehaviour.Properties.of().strength(0.8f, 2f).sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> SARONITE_BLOCK = registerBlock("saronite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.8f,2f).sound(SoundType.METAL)));
+
+    public static final DeferredBlock<StairBlock> SARONITE_STAIRS = registerBlock("saronite_stairs",
+            () -> new StairBlock(ModBlocks.SARONITE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -17,5 +17,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     basicItem(ModItems.BANANA.get());
     basicItem(ModItems.BLOOD_COAL.get());
     basicItem(ModItems.CHISEL.get());
+    basicItem(ModItems.SARONITE_INGOT.get());
     }
 }

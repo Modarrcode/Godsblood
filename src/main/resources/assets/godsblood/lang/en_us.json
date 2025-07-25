@@ -6,12 +6,16 @@
   "item.godsblood.banana": "Banana",
   "item.godsblood.chisel": "Chisel",
   "item.godsblood.blood_coal": "Blood Coal",
+  "item.godsblood.unrefined_saronite_ingot": "Unrefined Saronite Ingot",
+  "item.godsblood.saronite_ingot": "Saronite Ingot",
 
 
   "block.godsblood.blood_block": "Block of God's Blood",
   "block.godsblood.magic_block": "Boom Block",
   "block.godsblood.saronite_ore": "Saronite Ore",
   "block.godsblood.blood_coal_block": "Blood Coal Block",
+  "block.godsblood.saronite_block": "Block of Saronite",
+  "block.godsblood.saronite_stairs": "Saronite Stairs",
 
   "creativetab.godsblood.gods_blood": "God's Blood",
 

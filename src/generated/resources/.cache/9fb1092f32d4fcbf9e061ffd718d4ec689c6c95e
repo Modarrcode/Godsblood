@@ -1,9 +1,15 @@
-// 1.21.1	2025-07-23T22:54:08.1530633	Recipes
+// 1.21.1	2025-07-24T17:05:45.0655263	Recipes
 ac9d8dda6b5a5b980ec32fe058c30e6b1b31de07 data/godsblood/advancement/recipes/misc/blood_block.json
 6103b9bd472eabdb0f678677586dd112e2f9dcdf data/godsblood/advancement/recipes/misc/blood_coal.json
 0ae7e2a48d2f38e49dd6f7955795bccad3021ad3 data/godsblood/advancement/recipes/misc/blood_coal_block.json
 e155eb86425abf332f6df402f7933e8c1791ae35 data/godsblood/advancement/recipes/misc/godsblood.json
+0637ab26aeb805f497016f210d039f9bfaaa4280 data/godsblood/advancement/recipes/misc/saronite_block.json
+7550fddaff47bd9ab463b28435c6e96eeab6133d data/godsblood/advancement/recipes/misc/saronite_ingot.json
+e0598b6f0046c88bc698e79e2326b554f120586e data/godsblood/advancement/recipes/misc/saronite_ingot_from_block.json
 b1d4636c8433864ffd690ab084e0213035eabf4a data/godsblood/recipe/blood_block.json
 b00a7ec07d6612e7ae3f5d3b060660c945a48955 data/godsblood/recipe/blood_coal.json
 08a5cb5b758c57c2728e84ff7a6b3c82bb931f81 data/godsblood/recipe/blood_coal_block.json
 18f88c70b870c55ff67675d0ff0f714e2ce9a5e4 data/godsblood/recipe/godsblood.json
+be862c7a89cda77bbce073b5bf5789b54249dbde data/godsblood/recipe/saronite_block.json
+1491c9f6e4c0ce0b0adfdc9b984f69396012c685 data/godsblood/recipe/saronite_ingot.json
+3b6fe40de02d630c14223b626b484c8e4098448a data/godsblood/recipe/saronite_ingot_from_block.json
