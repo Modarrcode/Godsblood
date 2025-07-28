@@ -52,6 +52,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.SARONITE_INGOT.get())
                 .unlockedBy("has_saronite_ingot", has(ModItems.SARONITE_INGOT)).save(recipeOutput);
 
+        stairBuilder(ModBlocks.SARONITE_STAIRS.get(), Ingredient.of(ModItems.SARONITE_INGOT)).group("saronite")
+                        .unlockedBy("has_saronite_ingot", has(ModItems.SARONITE_INGOT)).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLOOD_COAL.get())
                 .pattern(" B ")

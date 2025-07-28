@@ -2,9 +2,12 @@ package com.modarr.godsblood.datagen;
 
 import com.modarr.godsblood.GodsBlood;
 import com.modarr.godsblood.block.ModBlocks;
+import com.modarr.godsblood.block.custom.SaroniteLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -23,7 +26,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SARONITE_BLOCK);
         stairsBlock(ModBlocks.SARONITE_STAIRS.get(), blockTexture(ModBlocks.SARONITE_BLOCK.get()));
 
-        blockItem(ModBlocks.SARONITE_STAIRS);
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.SARONITE_LAMP_BLOCK.get()).forAllStates(state -> {
+            if(state.getValue(SaroniteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("saronite_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(GodsBlood.MODID, "block/" + "saronite_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("saronite_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(GodsBlood.MODID, "block/" + "saronite_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.SARONITE_LAMP_BLOCK.get(), models().cubeAll("saronite_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(GodsBlood.MODID, "block/" + "saronite_lamp_on")));
     }
 
     private void blockWithItem(DeferredBlock<Block> deferredBlock) {

@@ -1,6 +1,7 @@
 package com.modarr.godsblood.block;
 
 import com.modarr.godsblood.block.custom.MagicBlock;
+import com.modarr.godsblood.block.custom.SaroniteLampBlock;
 import net.minecraft.world.level.block.Block;
 import com.modarr.godsblood.GodsBlood;
 import com.modarr.godsblood.item.ModItems;
@@ -41,6 +42,11 @@ public class ModBlocks {
     public static final DeferredBlock<StairBlock> SARONITE_STAIRS = registerBlock("saronite_stairs",
             () -> new StairBlock(ModBlocks.SARONITE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> SARONITE_LAMP_BLOCK = registerBlock("saronite_lamp_block",
+            () -> new SaroniteLampBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .lightLevel(state -> state.getValue(SaroniteLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                       output.accept(ModBlocks.BLOOD_COAL_BLOCK);
                       output.accept(ModBlocks.SARONITE_BLOCK);
                       output.accept(ModBlocks.SARONITE_STAIRS);
+                      output.accept(ModBlocks.SARONITE_LAMP_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {
