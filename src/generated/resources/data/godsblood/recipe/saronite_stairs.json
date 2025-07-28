@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "saronite",
+  "key": {
+    "#": {
+      "item": "godsblood:saronite_ingot"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "godsblood:saronite_stairs"
+  }
+}

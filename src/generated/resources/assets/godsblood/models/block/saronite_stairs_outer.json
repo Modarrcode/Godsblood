@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "godsblood:block/saronite_block",
+    "side": "godsblood:block/saronite_block",
+    "top": "godsblood:block/saronite_block"
+  }
+}

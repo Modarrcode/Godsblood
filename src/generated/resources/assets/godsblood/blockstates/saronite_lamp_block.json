@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "godsblood:block/saronite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "godsblood:block/saronite_lamp_on"
+    }
+  }
+}

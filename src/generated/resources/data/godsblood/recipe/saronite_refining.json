@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "godsblood:unrefined_saronite_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "godsblood:saronite_ingot"
+  }
+}
