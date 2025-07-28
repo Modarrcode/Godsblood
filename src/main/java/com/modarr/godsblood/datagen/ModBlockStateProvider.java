@@ -25,6 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLOOD_COAL_BLOCK);
         blockWithItem(ModBlocks.SARONITE_BLOCK);
         stairsBlock(ModBlocks.SARONITE_STAIRS.get(), blockTexture(ModBlocks.SARONITE_BLOCK.get()));
+        simpleBlockItem(ModBlocks.SARONITE_STAIRS.get(), new ModelFile.UncheckedModelFile("godsblood:block/" + ModBlocks.SARONITE_STAIRS.getId().getPath()));
 
         customLamp();
     }
